@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".bardemo">
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="500dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    <com.github.mikephil.charting.charts.BarChart-->
+<!--        android:id="@+id/barchart"-->
+<!--        android:layout_width="500dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    </HorizontalScrollView>-->
+
+    //stack
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/hsvChart"-->
+<!--        android:layout_width="800dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <com.github.mikephil.charting.charts.BarChart-->
+<!--                android:id="@+id/chart"-->
+<!--                android:layout_width="600dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginBottom="3dp"-->
+<!--                android:layout_marginTop="3dp" />-->
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
+
+    <HorizontalScrollView
+        android:id="@+id/hview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="800dp"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_below="@+id/hview"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="[CT-1] Fluency             [CT-2] Flexibility               [CT-3] Originality"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="[CT-4] Elaboration       [CT-5] Tolerance of Ambiguity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="[CT-6] Breadth of Interest   [CT-7] Sensitivity   [CT-8] Curiosity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text= "[CT=9] Reflection         [CT-10] Action"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text= " [CT-11] Concentration and Persistence
+                             [CT-12] Expression of total Personality
+                             [CT-13] Sense of Humour"/>
+
+        </LinearLayout>
+    <!--        -->
+<!--         [CT-4] Elaboration  [CT-5] Tolerance of Ambiguity               [CT-6] Breadth of Interest-->
+<!--        [CT-7] Sensitivity                  [CT-8] Curiosity  [CT=9] Reflection  [CT-10] Action-->
+<!--            [CT-11] Concentration and Persistence  [CT-12] Expression of total Personality-->
+<!--        [CT-13] Sense of Humour"-->
+
+
+<!--    "Fluency", "Flexibility", "Originality", "Elaboration", "Tolerance of Ambiguity", "Breadth of Interest", "Sensitivity", "Curiosity", "Reflection", "Action", "Concentration & Persistence",-->
+<!--    "Expression of total personality", "Sense of Humour"-->
+
+
+</RelativeLayout>

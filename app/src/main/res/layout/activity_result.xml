@@ -23,12 +23,13 @@
         android:background="#F44336"
         android:textColor="#000000"
         android:textAlignment="center"
-        android:textSize="19dp" />
+        android:textSize="19dp"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Restart"
+        android:text="Proceed"
         android:id="@+id/btnRestart"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="119dp"
